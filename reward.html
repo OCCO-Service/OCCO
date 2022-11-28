@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오코, 오늘의 코스는?</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OCCO" />
+    <meta property="og:title" content="OCCO" />
+    <meta
+      property="og:description"
+      content="오코 공식 홈페이지에 오신것을 환영합니다. GREENY의 최신 정보부터 인기이벤트들을 확인하실 수 있습니다."
+    />
+    <meta property="og:image" content="./images/header_logo/header_logo.png" />
+    <!-- <meta property="og:url" content="https://" /> -->
+
+    <link rel="icon" href="./occo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/body3.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/body.js"></script>
+    <script>
+      function inAdd() {
+        dataLayer.push ({
+          'event' : 'inAdd',
+          'varin' : 'son'  
+        });
+        alert("이벤트 준비 중 입니다.");
+      }
+  
+      function moreAdd() {
+        dataLayer.push ({
+          'event' : 'moreAdd',
+          'varmore' : 'son'  
+        });
+        alert("이벤트 준비 중 입니다.");
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <ul class="header_menu">
+        <li class="menu_list"><a href="./login.html">개인 로그인</a></li>
+        <li class="menu_list"><a class="search" href="javascript:void(0)">검색</a></li>
+        <li class="menu_search">
+          <div class="form">
+          <input type="text" placeholder="검색어를 입력해주세요."/>
+          <button></button>
+          </div>
+        </li>
+      </ul>
+      <div class="header_list">
+        <a href="./index.html">
+          <img
+            class="header_logo"
+            src="./images/header_logo/header_occo.png"
+            alt="logo"
+          />
+        </a>
+        <ul class="introduction">
+          <li><a href="./intro.html" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">브랜드소개</a></li>
+          <li><a href="./activity.html" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">가이드</a></li>
+          <li><a href="./goods.html" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">굿즈</a></li>
+          <li><a href="./reward.html" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">리워드</a></li>
+          <li><a href="./business.html" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">비즈니스</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/banners/b_occo1.png"/>
+            <div class="swiper__button">
+              <button value="참여하기" class="more" onclick="inAdd();">참여하기</button>
+              <button value="자세히보기" class="more" onclick="moreAdd();">자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners/b_occo2.png"/>
+            <div class="swiper__button">
+              <button value="참여하기" class="more" onclick="inAdd();">참여하기</button>
+              <button value="자세히보기" class="more" onclick="moreAdd();">자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners/b_occo3.png">
+            <div class="swiper__button">
+              <button value="참여하기" class="more" onclick="inAdd();">참여하기</button>
+              <button value="자세히보기" class="more" onclick="moreAdd();">자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners/b_occo4.png">
+            <div class="swiper__button">
+              <button value="참여하기" class="more" onclick="inAdd();">참여하기</button>
+              <button value="자세히보기" class="more" onclick="moreAdd();">자세히 보기</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="log_bar">
+        <span class="login_text" style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'"
+          >로그인 하시고 "오코"와 함께 의미있고 가치있는 활동 하고 리워드 받아보세요!
+        </span>
+        <span class="login_text2"><a href="./login.html">로그인</a></span>
+        <span class="login_text2"><a href="javascript:void(0)"></a>회원가입</a></span>
+      </div>
+
+    </section>
+
+    <div class="tap_service">
+      <div class="tap"><span>오코, 오늘의 코스는?</span></div>
+      <div class="tap"><span>UX디자인 :: Team 오코</span></div>
+    </div>
+
+    <div class="duce">
+        <img src="./images/reward/grade.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/reward/point.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space2.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/reward/event1.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/reward/event2.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space3.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+      <div class="duce">
+        <img src="./images/prototpye/space.png" style="margin-top: 30px;">
+      </div>
+
+
+    <footer>
+
+      <div class="inner-top">
+        <img src="./images/footer_logo/occo2.png" alt="로고">
+        <ul>
+          <li>
+            <a href="javascript:void(0)"><span>OCCO</span></a>
+            <a href="javascript:void(0)"><span>저작권안내</span></a>
+            <a href="javascript:void(0)"><span style="color: white">개인정보 처리방침</span></a>
+            <a href="javascript:void(0)"><span>이용약관</span></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><span>동의대학교</span></a>
+            <a href="javascript:void(0)"><span>디자인공학부</span></a>
+            <a href="javascript:void(0)"><span>인간시스템디자인공학과</span></a>
+          </li>
+          <li>
+            <span>UX디자인 :: 담당교수 - 이재인 (email: inibest@deu.ac.kr) </span>
+          </li>
+          <li>
+            <span>COPYRIGHT ⓒ OCCO. ALL RIGHTS RESERVED.</span>
+          </li>
+        </ul>
+        <div class="footer-social">
+          <div class="icon">
+            <a href="javascript:void(0)"></a>
+            <a href="javascript:void(0)"></a>
+            <a href="javascript:void(0)"></a>
+            <a href="javascript:void(0)"></a>
+            <a href="javascript:void(0)"></a>
+          </div>
+          <select>
+            <option value="팀 네임">NERD Co. 오코, OCCO</option>
+            <option value="팀원">20172026 이준성</option>
+            <option value="팀원">20182034 김성주</option>
+            <option value="팀원">20182038 이도현</option>
+            <option value="팀원">20182014 정건영</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="inner-bottom">
+        <ul>
+          <li>
+            <img src="./images/footer_logo/footer-mark-wa.png" alt="로고">
+            <span>웹 접근성 품질인정</span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark01.png" alt="로고">
+            <span>우수디자인 인시디부선정</span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark03.png" alt="로고">
+            <span>가족,환경 친화 우수기관</span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark04.png" alt="로고">
+            <span>2022년 인시디서비스품질지수 (KS-SQI) 사회환경, 경제 부문 5년 연속 1위</span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark05.png" alt="로고">
+            <span>2022년 인시디품질만족지수 (KS-QEI) 조사 10개 부문 1위 (비즈니스, 친환경, 사회복지 전 부문)</span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark06.png" alt="로고">
+            <span>2022년 동의고객만족도 (DCSI) 비즈니스부문 최초 조사대상 전부문 1위 수상 </span>
+          </li>
+          <li>
+            <img src="./images/footer_logo/footer-mark07.png" alt="로고">
+            <span>2022년 동의산업의 고객만족도 (DCSI) 환경친화, 비즈니스 부문 1위 (사화문제 비즈니스화)</span>
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+  </body>
+</html>
