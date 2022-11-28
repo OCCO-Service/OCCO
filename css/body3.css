@@ -303,17 +303,25 @@
   justify-content: center;
   padding-top: 40px;
 }
+
+.duce img {
+  display: inline-block;
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
+}
+
 @media screen and (max-width: 1200px) {
   .section_3 {
     padding: 0px;
   }
-  .section_3 .sns_container .sns {
+  .section_3 .sns_container .sns .screen {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .banner .swiper-slide .swiper__button {
+  .banner .swiper-slide .swiper__button .duce {
     left: 20px;
     bottom: 20px;
   }
@@ -335,7 +343,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .banner .swiper-container {
+  .banner .swiper-container .duce {
     margin-bottom: 20px;
   }
   .log_bar {
